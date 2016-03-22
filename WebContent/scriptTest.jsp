@@ -26,7 +26,7 @@
 		var i = 0;
 		var a = 0;
 		while(i <= 30){
-			alert("test2: " + i + "\n" + "間違った回数:" + a);
+			alert("ループ回数: " + i + "\n" + "間違った回数:" + a);
 			if(i == 30){
 				var ans = "";
 				var result = prompt("正解を入力してください",ans);

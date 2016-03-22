@@ -12,8 +12,10 @@
 		var i = 0;
 		while(i <= 30){
 			alert("test1: " + i);
+			document.write('<img src="img/unko.jpg" width="104" height="91" />');
 			if(i == 30){
 				alert("おつかれ～");
+				document.write('<img src="img/unko.jpg" width="104" height="91" />');
 				break;
 			}
 			i++;
@@ -22,8 +24,9 @@
 
 	function test2(){
 		var i = 0;
+		var a = 0;
 		while(i <= 30){
-			alert("test2: " + i);
+			alert("test2: " + i + "\n" + "間違った回数:" + a);
 			if(i == 30){
 				var ans = "";
 				var result = prompt("正解を入力してください",ans);
@@ -31,15 +34,19 @@
 					alert("おつかれ～");
 					break;
 				}else{
-					alert("続きます");
+					alert("はい間違い。ブツが表示されます");
 					i = 0;
+					a++;
+				}
+				if(a > 0){
+					for(var j = 0; j < a; j++){
+						document.write('<img src="img/unko.jpg" width="104" height="91" />');
+					}
 				}
 			}
 			i++;
 		}
 	}
 </script>
-<a onclick="test1()">test1</a>
-<a onclick="test2()">test2</a>
 </body>
 </html>

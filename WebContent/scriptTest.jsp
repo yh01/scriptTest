@@ -31,6 +31,7 @@
 				var ans = "";
 				var result = prompt("正解を入力してください",ans);
 				if(result == "正解"){
+					alert("あなたは"+ a +"回間違えましたね");
 					alert("おつかれ～");
 					break;
 				}else{
@@ -39,8 +40,8 @@
 					a++;
 				}
 				if(a > 0){
-					for(var j = 0; j < a; j++){
-						document.write('<img src="img/unko.jpg" width="104" height="91" />');
+					for(var j = 0; j < a-a/2; j++){
+						document.write('<img src="img/unko.jpg" width="200" height="190" />');
 					}
 				}
 			}

@@ -1,41 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body onLoad="test2()">
-<script>
-	function test1(){
-		var i = 0;
-		while(i <= 30){
-			alert("test1: " + i);
-			if(i == 30){
-				alert("おつかれ～");
-				break;
-			}
-			i++;
-		}
-	}
-
-	function test2(){
-		var i = 0;
-		while(i <= 30){
-			alert("test2: " + i);
-			if(i == 30){
-				var ans = "";
-				var result = prompt("正解を入力してください",ans);
-				if(result == "正解"){
-					alert("おつかれ～");
-					break;
-				}else{
-					alert("続きます");
-					i = 0;
-				}
-			}
-			i++;
-		}
-	}
-</script>
-</body>
-</html>
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<SCRIPT language="JavaScript">
+function moveImg() {
+  img.style.left = event.x;
+  img.style.top = event.y;
+}
+window.document.onmousemove = moveImg;
+</SCRIPT>
+</HEAD>
+<BODY bgcolor="#ffffff">
+クリックした位置に画像を移動します。<BR>
+<IMG src="img/unko.png" name="img" style="position:absolute;"><BR>
+</BODY>
+</HTML>
